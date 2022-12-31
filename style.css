@@ -18,17 +18,17 @@ body {
     place-content: center;
     background-color: var(--clr-neutral-gray);
     font-family: var(--ff-Karla);
-    font-size: 16px;
+    font-size: 1rem;
 }
 .container {
-    --div-padding: 40px;
+    --div-padding: 2.5rem;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 7px;
     overflow: hidden;
-    max-width: 650px;
-    max-height: 800px;
+    max-width: 40rem;
+    max-height: 50rem; /* not really sure of that */
 }
 .community {
     background-color: white;
@@ -37,13 +37,13 @@ body {
 }
 .community h1 {
     color: var(--clr-primary-cyan);
-    margin-bottom: 20px;
-    font-size: 25px;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
 }
 .community p[class="subtitle"]{
     color: var(--clr-primary-yellow);
     font-weight: var(--fw-700);
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 .community p[class="text"] {
     color: var(--clr-neutral-blue);
@@ -55,17 +55,17 @@ body {
 .subscription h2 {
     color: white;
     font-weight: var(--fw-400);
-    font-size: 18px;
-    margin-bottom: 10px;  
+    font-size: 1.2rem;
+    margin-bottom: 1rem;  
 }
 .subscription .flex-group {
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
 }
 .subscription .flex-group p[class="price"] { 
-    font-size: 30px;
+    font-size: 2rem;
     color: white;
-    margin: 0 10px 0 0;
+    margin: 0 1rem 0 0;
     font-weight: var(--fw-700);
 }
 .subscription .flex-group p[class="month"] {
@@ -75,7 +75,7 @@ body {
 }
 .subscription p[class="description"] {
     color: var(--clr-neutral-gray);
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 .subscription .button {
     display: flex;
@@ -85,7 +85,7 @@ body {
     text-decoration: none;
     color: white ;
     background-color: var(--clr-primary-yellow);
-    padding : 11px 90px;
+    padding: 0.75rem 5.5rem;
     border-radius: 6px;
 }
 .why {
@@ -94,20 +94,20 @@ body {
 }
 .why h2 {
     color : white;
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 .why ul li {
     list-style: none;
     color: var(--clr-neutral-gray);
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 @media (max-width:450px) {
         .container {
-            --div-padding: 25px;
+            --div-padding: 1.6em;
             
-            margin: 30px;
+            margin: 1.875em;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
         }
@@ -116,16 +116,16 @@ body {
             grid-column: span 1;
         }
         .subscription, .community, .why {
-            height: 200px;
-        }
+            height: 12.5em;    /* not really sure of that */
+        } 
         .community h1 {
-            font-size: 18px;
+            font-size: 1.125em;
         }
         .community p[class="subtitle"] {
-            font-size: 14px;
+            font-size: .875em;
         }
         .community p[class="text"] {
-            line-height: 25px;
-            font-size: 14px;
+            line-height: 1.5em;
+            font-size: .875em;
         }
 }
